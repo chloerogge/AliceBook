@@ -1,0 +1,80 @@
+
+.background{
+    background-color: powderblue;
+}
+
+
+
+
+.toptext{
+  position: absolute;
+	top: 50px;
+	left: 70px;
+    
+    
+
+
+    
+    
+  
+}
+
+@keyframes toptext_fade{
+    0% {opacity: 0;}
+    100% {opacity:1;}
+}
+
+.toptext{
+    opacity: 0;
+    animation: toptext_fade 4s infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+
+}
+
+
+
+.face{
+    position: absolute;
+    top: 300px;
+    
+
+    
+    
+    
+    
+}
+
+.face:hover{
+    filter:opacity(0%);
+    transition: filter 0.5s;
+}
+
+
+.bottomtext{
+    position: relative;
+	top: 535px;
+	left: 30px;
+	animation: rotate 4s linear reverse;    
+}
+
+
+
+@keyframes rotate	{
+
+	0%	{	transform:	rotate(0deg);	}
+	100%	{	transform:	rotate(180deg);	}
+
+}
+
+.cover {
+
+	width: 400px;
+	height: 600px;
+	border: none;
+	background-color: #282739;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
